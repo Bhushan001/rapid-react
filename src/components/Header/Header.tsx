@@ -4,7 +4,7 @@ import "./Header.css";
 interface IHeaderProps {
   title?: string;
   icon?: string;
-  count?: string; // Change the required prop to an optional prop.
+  count?: number; // Change the required prop to an optional prop.
 }
 const Header: React.SFC<IHeaderProps> = props => {
   return (
@@ -21,7 +21,7 @@ const Header: React.SFC<IHeaderProps> = props => {
 };
 
 Header.defaultProps = {
-  count: "4",
+  count: 3,
   icon: "fa fa-file fa-5x",
   title: "Workspaces"
 };

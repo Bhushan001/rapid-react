@@ -2,5 +2,19 @@
   width: 100%;
   border: 1px solid #eee;
   box-shadow: 0 2px 3px #ccc;
+  height: 474px;
 }
-
+.item {
+  text-align: left;
+  width: 100%;
+}
+.item-right {
+  float: right;
+}
+.item-left {
+  text-align: left;
+}
+.list{
+  height: 345px;
+  overflow: scroll;
+}

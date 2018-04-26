@@ -4,24 +4,27 @@ import "./ProjectManager.css";
 import Projects from "./Projects/Projects";
 import Workspaces from "./Workspaces/Workspaces";
 
-class ProjectManager extends React.Component {
+class ProjectManager extends React.Component<any,any> {
+  constructor(props:any){
+    super(props);
+  }
   public render() {
     return (
       <div className="ProjectManager">
         <div className="row">
           <div className="col-md-4 col-sm-12">
             <div className="divWithPad">
-              <Workspaces />
+              <Workspaces workspaces={this.props.workspaces}/>
             </div>
           </div>
           <div className="col-md-4 col-sm-12">
             <div className="divWithPad">
-              <Projects />
+              <Projects workspaces={this.props.workspaces} />
             </div>
           </div>
           <div className="col-md-4 col-sm-12">
             <div className="divWithPad">
-              <Pages />
+              <Pages workspaces={this.props.workspaces} />
             </div>
           </div>
         </div>
@@ -29,5 +32,6 @@ class ProjectManager extends React.Component {
     );
   }
 }
+
 
 export default ProjectManager;
