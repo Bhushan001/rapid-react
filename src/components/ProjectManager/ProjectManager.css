@@ -2,4 +2,8 @@
     width: 100%;
     border: 1px solid #eee;
     box-shadow: 0 2px 3px #ccc;
+    padding: 25px;
+}
+.divWithPad{
+    padding: 10px;
 }

@@ -8,7 +8,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navbar/>
-        <div className="container">
+        <div className="container-fluid">
           <h1>Rapid Designer - React Version</h1>
           <ProjectManager />
         </div>

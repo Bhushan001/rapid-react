@@ -9,14 +9,20 @@ class ProjectManager extends React.Component {
     return (
       <div className="ProjectManager">
         <div className="row">
-          <div className="offset-md-1 col-md-4 col-sm-12">
-            <Workspaces />
+          <div className="col-md-4 col-sm-12">
+            <div className="divWithPad">
+              <Workspaces />
+            </div>
           </div>
-          <div className="offset-md-1 col-md-4 col-sm-12">
-            <Projects />
+          <div className="col-md-4 col-sm-12">
+            <div className="divWithPad">
+              <Projects />
+            </div>
           </div>
-          <div className="offset-md-1 col-md-4 col-sm-12">
-            <Pages />
+          <div className="col-md-4 col-sm-12">
+            <div className="divWithPad">
+              <Pages />
+            </div>
           </div>
         </div>
       </div>

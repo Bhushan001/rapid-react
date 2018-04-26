@@ -26,3 +26,11 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+.menu{
+  background-color: #1a237e;
+  color: white;
+}
+.box {
+  height: 30%;
+  padding: 30px;
+}
